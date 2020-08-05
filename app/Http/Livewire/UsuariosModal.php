@@ -5,7 +5,7 @@ namespace App\Http\Livewire;
 use App\Models\User;
 use Livewire\Component;
 
-class Usuarios extends Component
+class UsuariosModal extends Component
 {
     public $users, $name, $email, $user_id;
 
@@ -14,7 +14,8 @@ class Usuarios extends Component
     public function render()
     {
         $this->users = User::all();
-        return view('usuarios.listado');
+
+        return view('usuarios-modal.listado');
     }
 
     private function resetInputFields()
@@ -54,6 +55,7 @@ class Usuarios extends Component
     public function cancel()
     {
         $this->updateMode = false;
+
         $this->resetInputFields();
     }
 
@@ -68,14 +70,18 @@ class Usuarios extends Component
 
         if ($this->user_id) {
             $user = User::find($this->user_id);
+
             $user->update(
                 [
                     'name'  => $this->name,
                     'email' => $this->email,
                 ]
             );
+
             $this->updateMode = false;
+
             session()->flash('message', 'Users Updated Successfully.');
+
             $this->resetInputFields();
         }
     }
@@ -84,6 +90,7 @@ class Usuarios extends Component
     {
         if ($id) {
             User::where('id', $id)->delete();
+
             session()->flash('message', 'Users Deleted Successfully.');
         }
     }

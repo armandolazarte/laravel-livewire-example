@@ -16,7 +16,7 @@
                         </div>
                     @endif
 
-                    @livewire('usuarios')
+                    @livewire('usuarios-modal')
                 </div>
             </div>
         </div>
