@@ -10,5 +10,6 @@ Route::view('/usuarios-cargar-mas','usuarios-cargar-mas.index')->name('usuarios-
 Route::view('/multiples-imagenes','multiples-imagenes.index')->name('multiples-imagenes');
 Route::view('/usuarios-buscar-paginacion','usuarios-buscar-paginacion.index')->name('usuarios-buscar-paginacion');
 Route::view('/usuarios-crud','usuarios-crud.index')->name('usuarios-crud');
+Route::view('/subir-archivo','subir-archivo.index')->name('subir-archivo');
 
 Auth::routes();
