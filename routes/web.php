@@ -11,5 +11,6 @@ Route::view('/multiples-imagenes','multiples-imagenes.index')->name('multiples-i
 Route::view('/usuarios-buscar-paginacion','usuarios-buscar-paginacion.index')->name('usuarios-buscar-paginacion');
 Route::view('/usuarios-crud','usuarios-crud.index')->name('usuarios-crud');
 Route::view('/subir-archivo','subir-archivo.index')->name('subir-archivo');
+Route::view('/subir-imagen','subir-imagen.index')->name('subir-imagen');
 
 Auth::routes();
