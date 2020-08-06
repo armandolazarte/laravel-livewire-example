@@ -13,4 +13,8 @@ Route::view('/usuarios-crud','usuarios-crud.index')->name('usuarios-crud');
 Route::view('/subir-archivo','subir-archivo.index')->name('subir-archivo');
 Route::view('/subir-imagen','subir-imagen.index')->name('subir-imagen');
 
+
+Route::get('modal','ModalController@index');
+Route::post('modal','ModalController@store')->name('modal.store');
+
 Auth::routes();
