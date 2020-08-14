@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'home.index')->name('home');
 Route::view('/usuarios-modal', 'usuarios-modal.index')->name('usuarios-modal');
+Route::view('/usuarios-registro-login', 'usuarios-registro-login.index')->name('usuarios-registro-login');
 Route::view('/usuarios-campos-dinamicos','usuarios-campos-dinamicos.index')->name('usuarios-campos-dinamicos');
 Route::view('/usuarios-paginacion','usuarios-paginacion.index')->name('usuarios-paginacion');
 Route::view('/usuarios-cargar-mas','usuarios-cargar-mas.index')->name('usuarios-cargar-mas');
