@@ -15,6 +15,8 @@ Route::view('/subir-archivo','subir-archivo.index')->name('subir-archivo');
 Route::view('/subir-imagen','subir-imagen.index')->name('subir-imagen');
 Route::view('/dropdowns','dropdowns.index')->name('dropdowns');
 
+Route::livewire('/galaxies', 'galaxy.index')->name('galaxies.index');
+
 Route::get('modal','ModalController@index');
 Route::post('modal','ModalController@store')->name('modal.store');
 
