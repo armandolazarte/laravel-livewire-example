@@ -2,11 +2,10 @@
 
 @section('content')
     <div class="container">
-        <div class="col-md-8 offset-2 mt-5">
+        <div class="col-md-8 offset-2">
             <div class="card">
                 <div class="card-header bg-info">
-                    <h5 class="text-white text-center">Laravel Bootstrap Modal Form Validation Example -
-                        NiceSnippets.com</h5>
+                    <h5 class="text-white text-center">Laravel Bootstrap Modal Form Validation Example - NiceSnippets.com</h5>
                 </div>
                 <div class="card-body">
                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">

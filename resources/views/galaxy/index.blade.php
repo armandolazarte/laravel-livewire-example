@@ -7,7 +7,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-8 offset-2 mt-5">
+            <div class="col-md-8 offset-2">
                 <div class="card">
                     <div class="card-header bg-info">
                         <button type="button" wire:click="$emitTo('galaxy.form', 'open')" class="btn btn-outline-light">Create Galaxy</button>

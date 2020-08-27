@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container mt-5">
+    <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-8 offset-2">
                 <div class="card">
                     <div class="card-header">
                         Laravel Livewire File Upload - Nicesnippets.com
