@@ -35,8 +35,12 @@
                 <li class="nav-item {{ request()->routeIs('subir-archivo') ? 'active' : '' }}">
                     <a class="nav-link" href="{{ route('subir-archivo') }}">Archivos</a>
                 </li>
-                <li class="nav-item {{ request()->routeIs('dropdowns') ? 'active' : '' }}">
-                    <a class="nav-link" href="{{ route('dropdowns') }}">Dropdowns</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle {{ request()->routeIs(['dropdowns*', 'dropdowns-ciudades*']) ? 'active' : '' }}" href="#" id="dropdowns" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdowns</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdowns">
+                        <a class="dropdown-item {{ request()->routeIs('dropdowns') ? 'active' : '' }}" href="{{ route('dropdowns') }}">Dropdowns</a>
+                        <a class="dropdown-item {{ request()->routeIs('dropdowns-ciudades') ? 'active' : '' }}" href="{{ route('dropdowns-ciudades') }}">Dropdowns Ciudades</a>
+                    </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle {{ request()->routeIs(['galaxies*', 'modal*']) ? 'active' : '' }}" href="#" id="modales" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Modales</a>
