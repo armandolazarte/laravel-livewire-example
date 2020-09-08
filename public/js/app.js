@@ -9627,7 +9627,7 @@ jQuery.fn.extend( {
 			return ( this[ 0 ] && this[ 0 ].parentNode ) ? this.first().prevAll().length : -1;
 		}
 
-		// Index in selector
+		// DependantSelect in selector
 		if ( typeof elem === "string" ) {
 			return indexOf.call( jQuery( elem ), this[ 0 ] );
 		}
@@ -9804,7 +9804,7 @@ jQuery.Callbacks = function( options ) {
 		// Queue of execution data for repeatable lists
 		queue = [],
 
-		// Index of currently firing callback (modified by add/remove as needed)
+		// DependantSelect of currently firing callback (modified by add/remove as needed)
 		firingIndex = -1,
 
 		// Fire callbacks
@@ -36430,7 +36430,7 @@ var modifiers = {
    * @inner
    */
   shift: {
-    /** @prop {number} order=100 - Index used to define the order of execution */
+    /** @prop {number} order=100 - DependantSelect used to define the order of execution */
     order: 100,
     /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
     enabled: true,
@@ -36477,7 +36477,7 @@ var modifiers = {
    * @inner
    */
   offset: {
-    /** @prop {number} order=200 - Index used to define the order of execution */
+    /** @prop {number} order=200 - DependantSelect used to define the order of execution */
     order: 200,
     /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
     enabled: true,
@@ -36507,7 +36507,7 @@ var modifiers = {
    * @inner
    */
   preventOverflow: {
-    /** @prop {number} order=300 - Index used to define the order of execution */
+    /** @prop {number} order=300 - DependantSelect used to define the order of execution */
     order: 300,
     /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
     enabled: true,
@@ -36544,7 +36544,7 @@ var modifiers = {
    * @inner
    */
   keepTogether: {
-    /** @prop {number} order=400 - Index used to define the order of execution */
+    /** @prop {number} order=400 - DependantSelect used to define the order of execution */
     order: 400,
     /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
     enabled: true,
@@ -36563,7 +36563,7 @@ var modifiers = {
    * @inner
    */
   arrow: {
-    /** @prop {number} order=500 - Index used to define the order of execution */
+    /** @prop {number} order=500 - DependantSelect used to define the order of execution */
     order: 500,
     /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
     enabled: true,
@@ -36585,7 +36585,7 @@ var modifiers = {
    * @inner
    */
   flip: {
-    /** @prop {number} order=600 - Index used to define the order of execution */
+    /** @prop {number} order=600 - DependantSelect used to define the order of execution */
     order: 600,
     /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
     enabled: true,
@@ -36636,7 +36636,7 @@ var modifiers = {
    * @inner
    */
   inner: {
-    /** @prop {number} order=700 - Index used to define the order of execution */
+    /** @prop {number} order=700 - DependantSelect used to define the order of execution */
     order: 700,
     /** @prop {Boolean} enabled=false - Whether the modifier is enabled or not */
     enabled: false,
@@ -36655,7 +36655,7 @@ var modifiers = {
    * @inner
    */
   hide: {
-    /** @prop {number} order=800 - Index used to define the order of execution */
+    /** @prop {number} order=800 - DependantSelect used to define the order of execution */
     order: 800,
     /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
     enabled: true,
@@ -36679,7 +36679,7 @@ var modifiers = {
    * @inner
    */
   computeStyle: {
-    /** @prop {number} order=850 - Index used to define the order of execution */
+    /** @prop {number} order=850 - DependantSelect used to define the order of execution */
     order: 850,
     /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
     enabled: true,
@@ -36721,7 +36721,7 @@ var modifiers = {
    * @inner
    */
   applyStyle: {
-    /** @prop {number} order=900 - Index used to define the order of execution */
+    /** @prop {number} order=900 - DependantSelect used to define the order of execution */
     order: 900,
     /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
     enabled: true,

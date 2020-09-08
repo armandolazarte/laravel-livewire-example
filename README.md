@@ -14,3 +14,4 @@
 - Laravel Livewire Dropdowns
 - Laravel Livewire Modal Hijo
 - Laravel Livewire Dropdowns Ciudades
+- Laravel Livewire Dependant Select

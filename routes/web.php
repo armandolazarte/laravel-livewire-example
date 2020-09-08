@@ -17,6 +17,7 @@ Route::view('/dropdowns','dropdowns.index')->name('dropdowns');
 Route::view('/dropdowns-ciudades','dropdowns-ciudades.index')->name('dropdowns-ciudades');
 
 Route::livewire('/galaxies', 'galaxy.index')->name('galaxies');
+Route::view('/dependant-select', 'dependant-select.index')->name('dependant-select');
 
 Route::get('modal','ModalController@index')->name('modal');
 Route::post('modal','ModalController@store')->name('modal.store');
