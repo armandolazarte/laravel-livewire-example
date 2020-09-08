@@ -10,28 +10,51 @@ use App\Models\Departamento;
 class Dropdowns extends Component
 {
     public $provincia;
-    public $departamentos = [];
     public $departamento;
-    public $localidades   = [];
     public $localidad;
 
-    /*public function mount($provincia, $departamento)
+    public function updatedProvincia()
     {
-        $this->provincia    = $provincia;
-        $this->departamento = $departamento;
-    }*/
+        $this->departamento = null;
+        $this->localidad    = null;
+    }
+
+    public function updatedDepartamento()
+    {
+        $this->localidad = null;
+    }
+
+    public function provincias()
+    {
+        return Provincia::all();
+    }
+
+    public function departamentos()
+    {
+        if ($this->provincia === null) {
+            return [];
+        }
+
+        return Departamento::query()->where('provincia_id', $this->provincia)->get();
+    }
+
+    public function localidades()
+    {
+        if ($this->departamento === null) {
+            return [];
+        }
+
+        return Localidad::query()->where('departamento_id', $this->departamento)->get();
+    }
 
     public function render()
     {
-        if (!empty($this->provincia)) {
-            $this->departamentos = Departamento::query()->where('provincia_id', $this->provincia)->get();
-        }
-
-        if (!empty($this->departamento)) {
-            $this->localidades = Localidad::query()->where('departamento_id', $this->departamento)->get();
-        }
-
-        return view('dropdowns.dropdowns')
-            ->withProvincias(Provincia::query()->orderBy('nombre')->get());
+        return view('dropdowns.dropdowns')->with(
+            [
+                'provincias'    => $this->provincias(),
+                'departamentos' => $this->departamentos(),
+                'localidades'   => $this->localidades(),
+            ]
+        );
     }
 }

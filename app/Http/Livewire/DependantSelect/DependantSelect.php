@@ -3,8 +3,6 @@
 namespace App\Http\Livewire\DependantSelect;
 
 use Livewire\Component;
-use App\Models\Provincia;
-use App\Models\Departamento;
 
 class DependantSelect extends Component
 {

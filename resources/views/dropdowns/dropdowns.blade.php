@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-4">
         <select wire:model="provincia" name="provincia" class="custom-select text-uppercase">
-            <option value="0">Seleccione una provincia</option>
+            <option value="">Seleccione una provincia</option>
 
             @foreach ($provincias as $provincia)
                 <option value="{{ $provincia->id }}">{{ $provincia->nombre }}</option>
