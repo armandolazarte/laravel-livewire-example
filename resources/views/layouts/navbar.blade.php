@@ -36,11 +36,12 @@
                     <a class="nav-link" href="{{ route('subir-archivo') }}">Archivos</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle {{ request()->routeIs(['dropdowns*', 'dropdowns-ciudades*', 'dependant-select*']) ? 'active' : '' }}" href="#" id="dropdowns" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdowns</a>
+                    <a class="nav-link dropdown-toggle {{ request()->routeIs(['dropdowns*', 'dropdowns-ciudades*', 'dependant-select*', 'select-dependiente*']) ? 'active' : '' }}" href="#" id="dropdowns" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdowns</a>
                     <div class="dropdown-menu" aria-labelledby="dropdowns">
                         <a class="dropdown-item {{ request()->routeIs('dropdowns') ? 'active' : '' }}" href="{{ route('dropdowns') }}">Dropdowns</a>
                         <a class="dropdown-item {{ request()->routeIs('dropdowns-ciudades') ? 'active' : '' }}" href="{{ route('dropdowns-ciudades') }}">Dropdowns Ciudades</a>
                         <a class="dropdown-item {{ request()->routeIs('dependant-select') ? 'active' : '' }}" href="{{ route('dependant-select') }}">Dependant Select</a>
+                        <a class="dropdown-item {{ request()->routeIs('select-dependiente') ? 'active' : '' }}" href="{{ route('select-dependiente') }}">Select Dependiente</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
