@@ -49,7 +49,7 @@ class ProvinciaLocalidad extends Component
             return [];
         }
 
-        return Departamento::query()->where('provincia_id', $this->provincia)->get();
+        return Provincia::query()->findOrFail($this->provincia)->departamentos()->get();
     }
 
     public function localidades()
@@ -58,7 +58,7 @@ class ProvinciaLocalidad extends Component
             return [];
         }
 
-        return Localidad::query()->where('departamento_id', $this->departamento)->get();
+        return Departamento::query()->findOrFail($this->departamento)->localidades()->get();
     }
 
     public function onHazQueLluevaClick()
