@@ -51,6 +51,12 @@
                         <a class="dropdown-item {{ request()->routeIs('modal') ? 'active' : '' }}" href="{{ route('modal') }}">Modal Laravel</a>
                     </div>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle {{ request()->routeIs(['post-crud-modal*']) ? 'active' : '' }}" href="#" id="posts" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Posts</a>
+                    <div class="dropdown-menu" aria-labelledby="posts">
+                        <a class="dropdown-item {{ request()->routeIs('post-crud-modal') ? 'active' : '' }}" href="{{ route('post-crud-modal') }}">Post CRUD Modal</a>
+                    </div>
+                </li>
             </ul>
 
             <!-- Right Side Of Navbar -->
